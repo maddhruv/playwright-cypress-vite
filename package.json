@@ -1,0 +1,29 @@
+{
+  "name": "playwright-cypress-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "npm run build && npm run preview",
+    "test:playwright": "time npx playwright test",
+    "test:cypress": "time start-server-and-test start http-get://127.0.0.1:4173/ cy:run",
+    "cy:run": "npx cypress run --browser chrome --e2e"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.32.3",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "cypress": "^12.10.0",
+    "start-server-and-test": "^2.0.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  }
+}
