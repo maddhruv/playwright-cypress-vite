@@ -1,4 +1,4 @@
-# Playwright VS Cypress with Vite
+# Playwright V/S Cypress with Vite
 
 ## Comparison
 
@@ -15,3 +15,7 @@
 | Documentation | ⚠️ [Difficult to understand docs](https://playwright.dev/docs/intro) | ✅ [Easier docs](https://docs.cypress.io/guides/overview/why-cypress) |
 | Speed | ✅ Very fast as compared since can run parallel | 🛑 Overall a slow experience with multiple tests |
 | Flakyness | ✅ Better support to handle flakyness with waitUntil and retries | ⚠️ Multiple reporting of cypress flakyness with frameworks |
+
+## Compare by running Playwright and Cypress
+
+This repo contains a vite app, you can compare both playwright and cypress tests by running the following scripts and evaluating the time differences: `npm run test:playwright` and `npm run test:cypress`. You can clearly see some difference in the time taken to run both the tests, even with only test suite to be run. With multiple tests running in parallel, playwright will have an upper hand with speed and performance.
